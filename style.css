@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Domine&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 .hero {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color: #000;
+    background-image: url(issues/background.png);
+    background-repeat:repeat;
     background-size: cover;
+    overflow:auto;
     background-position: center;
     position: relative;
 }
@@ -23,19 +26,43 @@
 }
 
 .logo {
-    width: 300px;
+    width: 150px;
 }
 
-.cardapio {
-    position: relative;
-    width: 100%;
-    margin:0;
-    padding:0;
-    background-size: cover;
+.titulo {
+    color: #e80000;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.texto {
+    font-family: 'Domine', serif;
+    font-size: 18px;
+    color: #282828;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    width: 15em;
+}
+
+.preco {
+    font-family: 'Domine', serif;
+    color: #282828;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fcb325;
+    border-radius: 3px;
+    padding: 2px;
 }
 
 .escopo {
-    overflow: auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .side-bar{
@@ -51,4 +78,53 @@
     width: 45px;
     cursor: pointer;
     padding-left: 15px;
+}
+
+.doces {
+    width: 20%;
+}
+
+.precoDoDoce {
+    
+    font-family: 'Domine', serif;
+    color: #282828;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fcb325;
+    border-radius: 3px;
+    display:inline-block;
+    padding: 2px;
+}
+
+.telefone {
+    
+    color: #e80000;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+}
+
+.textoFinal {
+    
+    font-family: 'Domine', serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #e80000;
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+    margin-top: 50px;
+}
+
+
+.pederneiras {
+    
+    font-family: 'Domine', serif;
+    color: #282828;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 2px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
